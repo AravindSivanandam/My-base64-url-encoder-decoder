@@ -1,0 +1,30 @@
+{
+  "name": "My-base64-url-encoder-decoder",
+  "description": "For Encoding and Decoding base64-url !",
+  "version": "0.1.6",
+  "homepage": "https://github.com/AravindSivanandam/My-base64-url-encoder-decoder",
+  "author": {
+    "name": "Aravind Sivanandam",
+    "email": "aravindcdm2002@gmail.com",
+    "url": "http://mybase64url-encoderdecoder.website2.me/"
+  },
+  "contributors": [
+    {
+      "name": "Aravind Sivanandam",
+      "email": "aravindcdm2002@gmail.com",
+     
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/herrjemand/Base64URL-ArrayBuffer"
+  },
+  
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  
+  "keywords": [
+    "base64url"
+  ]
+}
