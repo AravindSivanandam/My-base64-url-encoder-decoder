@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <link rel="icon" href="https://www.matrox.com/sites/default/files/encode_decode_icon.png" />
+        <link rel="">
+
+        <style>
+            html { 
+                scroll-behavior: smooth; 
+            }
+            body { 
+                padding-top: 70px; 
+                background-color: rgba(250, 235, 215, 0.604);
+            }
+            a:hover { 
+                color: green; 
+            }
+
+            .topbar-offset { 
+                padding-top: 50px; 
+            }
+            .navbar { 
+                background-color: #e9ecef; 
+                position: fixed;
+                top: 0px;
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+
+                box-shadow: 0px 10px 10px 0px rgba(0,0,0,.2);
+                
+            }
+            .navbar-nav .nav-item { 
+                line-height: 35px;
+                
+                text-align: center; 
+            }
+            .navbar-nav .nav-item .nav-link { 
+                color: black;
+                border-radius: 3px; 
+                transition: all 0.4s ease 0s;
+               
+                text-align: center; 
+            }
+            .navbar-nav .nav-item.active .nav-link { 
+                font-weight: bold;
+                
+                text-align: center; 
+            }
+            .navbar-nav .nav-item:hover .nav-link { 
+                color: white; 
+                background-color: green;
+                
+                text-align: center; 
+            }
+            
+
+            .hint { 
+                color: gray; 
+            }
+
+
+            .successText { 
+                font-weight: bold; 
+                color: green; 
+            }
+            .failureText { 
+                font-weight: bold; 
+                color: red; 
+            }
+
+            .h1-1{
+                text-align: center;
+            }
+
+            .para1{
+                color: rgb(30, 0, 255);
+            }
+
+            .form-control{
+                border-radius: 10px;
+            }
+
+            .para2{
+                font-size: 25px;
+            }
+
+            .mybutton1{
+                border-radius: 10px;
+                background-color: white;
+                height: 50px;
+                color: blue;
+            }
+
+            .card-body{
+                height: 300px;
+                
+            }
+
+            .mybutton2{
+                border-radius: 5px;
+                position: absolute;
+                right: 10px;
+                color: blue;
+                height: 40px;
+                width: 70px;
+            }
+
+
+            .container{
+                align-content: space-around;
+                align-items: stretch;
+            }
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+            
+            .flash {
+                animation: flash-frames-bg linear 0.15s 6;
+            }
+            @keyframes flash-frames-bg {
+                 50% { background: #8c8; }
+            }
+            @keyframes flash-frames-shake {
+                 25% { transform: translate(-1px, -1px); }
+                 50% { transform: translate( 2px,  2px); }
+                 75% { transform: translate(-2px,  0px); }
+                100% { transform: translate( 2px, -2px); }
+            }
+            @keyframes flash-frames-rotate {
+                  50% { transform: rotate(-1deg); }
+                 100% { transform: rotate(+1deg); }
+            }
+        </style>
+
+
+
+
+
+
+
+
+        <script language="JavaScript" type="text/JavaScript">
+            function checkerror(msg, url, linenumber){ 
+                if (msg=='Permission Denied') {
+                    window.location = window.location
+                }
+                return true;
+            }
+    
+            window.onerror = checkerror;
+        </script>
+    
+        <script type="text/javascript" src="/services/ActiveAd/Utils_v9-long.js"></script>
+    
+    
+    
+    
+        <style type="text/css">
+            .Layer{
+                position:absolute; width:160px; height:600px; left:0; top:0; overflow:hidden; cursor:pointer; cursor:hand;
+            }
+            
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+<!-- ------------------------------------------------- custom header -->
+
+    <title>base64url Encoder - Code your secret message 'now'!</title>
+    <script type="text/javascript" src="a.js"></script>
+
+
+<!-- ------------------------------------------------- end of header -->
+
+    </head>
+    <body>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - -  Google-Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js');
+
+</script>
+<!-- - - - - - - - - - - - - - - - - - - - - -  end-Google-Analytics -->
+
+        <nav class="navbar" title="base64url Encode and Decode tool">
+            <a class="navbar-brand" href="index.php">
+                <span style="color: gray; font-weight: bold; font-size: 100%;">Easily</span>
+                <span style="color: gray; font-weight: bold; font-size: 100%;">"</span>
+                <span style="color: green; font-weight: bold;">ENCODE</span>
+                <span style="color: rgb(253, 71, 71); font-weight: bold; font-size: 100%;">⇒</span>
+                <span style="color: green; font-weight: bold;">RU5DT0RF</span>
+                <span style="color: gray; font-weight: bold; font-size: 100%;">"</span>
+                <span style="color: gray; font-weight: bold; font-size: 100%;">Your text</span>
+            </a>
+
+                <a href="about.html"><button class="mybutton2"><strong>About</strong></button></a>
+            
+        </nav> 
+
+        <div class="container">
+
+<!-- ------------------------------------------------------- content -->
+            <div class="h1-1">
+                <h1>base64url Encoder</h1>
+            
+                <p class="para2">
+                    Your best Open-Source Free Encoder
+                </p>
+                <h2 class="para1">
+                    Enjoy Encoding your TEXT...!
+                </h2>
+            </div>
+            <script type="text/javascript">
+                function onChange() {
+                    document.form1.result.value = base64url_encode(document.form1.data.value)
+                }
+            </script>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <form name="form1" >
+                        <div class="form-group form-row">
+                            <label for="data" class="col-sm-2 col-form-label">
+                                <strong> Plain Text </strong>
+                            </label>
+                            <div class="col-sm-10 offset-sm-0">
+                                <textarea
+                                    id="data" name="data"
+                                    class="form-control"
+                                    onchange="onChange()" onkeyup="onChange()"
+                                    rows=4
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label for="result" class="col-sm-2 col-form-label">
+                                <strong> Cipher Text </strong>
+                            </label>
+                            <div class="col-sm-10 offset-sm-0">
+                                <textarea
+                                    id="result" name="result"
+                                    class="form-control"
+                                    readonly
+                                    rows=4
+                                ></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            
+                <h1>☟ base64url Decoder</h1>
+                    <form action="base64url_Decoder.html">
+                    <button class="mybutton1">base64url Decoder</button>
+                    </form>
+            
+
+<!--
+                <hr><p>TEST:</p>
+                <table class=test>
+                    <tr><th>input</th><th>result</th><th>expected</th><th>status</th></tr>
+                    <script type="text/javascript">
+                        var test = [
+                            "", "",
+                            "f", "Zg==",
+                            "fo", "Zm8=",
+                            "foo", "Zm9v",
+                            "foob", "Zm9vYg==",
+                            "fooba", "Zm9vYmE=",
+                            "foobar", "Zm9vYmFy",
+                            "aa>", "YWE-",
+                            "aa?", "YWE_",
+                            "\351", "w6k=", // é (e-acute)
+                            "\u20AC", "4oKs" // € (euro)
+                        ]
+                        
+                        for (var i = 0; i < test.length; i += 2) {
+                            var testInput = test[i]
+                            var testOutput = base64url_encode(testInput)
+                            var testExpect = test[i+1]
+                            var testStatus = testOutput == testExpect ? "<font color=green>OK</font>" : "<font color=red>ERROR</font>"
+                            document.write("<tr>")
+                            document.write("<td>" + testInput + "</td>")
+                            document.write("<td>" + testOutput + "</td>")
+                            document.write("<td>" + testExpect + "</td>")
+                            document.write("<td><b>" + testStatus + "</b></td>")
+                            document.writeln("</tr>")
+                        }
+                    </script>
+                </table>
+-->
+
+<!-- -------------------------------------------------------- footer -->
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                console.log("document ready");
+                $('[data-toggle="tooltip"]').tooltip();
+                $('[data-toggle="popover"]').popover();
+            });
+        </script>
+
+
+
+
+
+
+        <div class="container-fluid">
+        <div class="row justify-content-center">
+        
+        <div style="position:sticky;top:10px;">
+        <div class="text-center"><span class="text-center" style="color: #9b9b9b;font-style: italic;font-size: 14px;">Advertisement</span>
+        
+        <div class="text-center bg-light" id="txt-left-sidebar" style="margin:5px auto;height: 150px;width: 1080px;background-color: #fafafa !important;">
+    
+        <div id="adngin-sticky_sidebar_left-0"></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <form id="clickForm" method="get" action="/servlet/redirect" target="_blank">
+            <input type="hidden" name="target" value="">
+            <input type="hidden" name="tclk" value="">
+            <input type="hidden" name="a" value="Fun88:DDM_APN_CAS_ACQ_IN_LiveCasinoOct2022_160x600"/>
+            <input type="hidden" name="s" value="DDM_CAS_ACQ_IN_LiveCasinoOct2022_160x600"/>
+    
+    
+    
+        
+        </form>
+    
+            
+    
+
+
+
+
+
+
+    </body>
+</html>
