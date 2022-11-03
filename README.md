@@ -11,81 +11,42 @@ The resulting encoded strings comply to the regular expression pattern '[A-Za-z0
 
 base64 url and bse64 characters
 
+
 Uppercase Letters
-Index	Base64 url Character  Base64 Character
-0	    A                     A
-1	    B                     B
-2	    C                     C
-3	    D                     D
-4	    E                     E
-5	    F                     F
-6	    G                     G
-7	    H                     H
-8	    I                     I
-9	    J                     J
-10	  K                     K
-11	  L                     L
-12	  M                     M
-13	  N                     N
-14	  O                     O
-15	  P                     P
-16	  Q                     Q
-17    R                     R
-18	  S                     S
-19	  T                     T
-20	  U                     U
-21	  V                     V
-22	  W                     W
-23	  X                     X
-24	  Y                     Y
-25	  Z                     Z
+
+
+Index	                : 0 1 2 3 4 5 6 7 8 9 10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  
+	
+Base64 url Character  : A B C D E F G H I J K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z
+
+Base64 Character      : A B C D E F G H I J K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z
 
 Lowercase Letters
-Index	Base64 url Character  Base64 Character
-26	  a                     a
-27	  b                     b
-28	  c                     c
-29	  d                     d
-30	  e                     e
-31	  f                     f
-32	  g                     g
-33	  h                     h
-34	  i                     i
-35	  j                     j
-36	  k                     k
-37	  l                     l
-38	  m                     m
-39	  n                     n
-40	  o                     o
-41	  p                     p
-42	  q                     q
-43	  r                     r
-44	  s                     s
-45	  t                     t
-46	  u                     u
-47	  v                     v
-48	  w                     w
-49	  x                     x
-50	  y                     y
-51	  z                     z
+
+
+Index	                : 26 27 28 29 30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51
+	
+Base64 url Character  : a  b  c  d  e   f   g   h   i   j   k   l   m   n   o   p   q   r   s   t   u   v   w   x   y   z
+
+Base64 Character      : a  b  c  d  e   f   g   h   i   j   k   l   m   n   o   p   q   r   s   t   u   v   w   x   y   z
 
 Digits
-Index	Base64 url Character  Base64 Character
-52	  0                     0
-53	  1                     1
-54	  2                     2
-55	  3                     3
-56	  4                     4
-57	  5                     5
-58	  6                     6
-59	  7                     7
-60	  8                     8
-61	  9                     9
+
+
+Index	                :  52	  53	 54	 55	 56	  57	 58	 59	 60	 61	 
+
+Base64 url Character  :  0    1    2   3   4    5    6   7   8    9
+
+Base64 Character      :  0    1    2   3   4    5    6   7   8    9
 
 Symbols
-Index	Base64 url Character  Base64 Character
-62    -                     +
-63	  _                     /
+
+
+Index	                :   62     63
+
+Base64 url Character  :   -      _
+
+Base64 Character      :   +      /
 
 (pad) =    (optional)
 
