@@ -48,5 +48,5 @@ Base64 url Character  :   -      _
 
 Base64 Character      :   +      /
 
-(pad) =    (optional)
+=    (optional)
 
