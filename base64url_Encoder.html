@@ -116,7 +116,14 @@
                 align-items: stretch;
             }
 
-
+            .mybutton3{
+                border-radius: 10px;
+                background-color: white;
+                height: 40px;
+                color: blue;
+                position: absolute;
+                left: 26.5%;
+            }
 
 
 
@@ -279,16 +286,21 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                                     readonly
                                     rows=4
                                 ></textarea>
+
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
+            
+            <button type="button" class="mybutton3" onclick="mySelectFunction()"><strong>Copy Cipher Text</strong></button>
 
+            <br>
+            <br>
             
                 <h1>☟ base64url Decoder</h1>
                     <form action="base64url_Decoder.html">
-                    <button class="mybutton1">base64url Decoder</button>
+                    <button class="mybutton1"><strong>base64url Decoder</strong></button>
                     </form>
             
 
@@ -342,9 +354,20 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             });
         </script>
 
+        <script>
+            // Select the contents of a text field with id="result"
+            function mySelectFunction() {
+                    document.getElementById("result").select();
+                    document.execCommand("Copy");
+            }
 
+            // Alert some text when the text in the text field has been selected
+            function myAlertFunction() {
+            }
+        </script>
 
-
+        <br>
+        <br>
 
 
         <div class="container-fluid">
